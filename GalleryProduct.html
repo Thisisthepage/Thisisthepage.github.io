@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<link type="text/css" rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+	<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+
+<body>
+	<main>
+	<section id="banner">	
+		<h1 class="animate__animated animate__bounce animate__infinite	infinite">My Gallery</h1>	
+	</section>
+	<section id="skills">
+		<h1>Image For More!</h1>
+			<div class="item">
+				<i class="fa fa-television fa-3x"></i>
+				<h3>Message Me</h3>
+				<p>Hãy nhắn tin cho chúng tôi.</p>
+			</div>
+			<div class="item">
+				<i class="fa fa-share-alt fa-3x"></i>
+				<h3>Spead this out</h3>
+				<p>Lan tỏa thông tin này với bạn bè.</p>
+			</div>
+			<div class="item">
+				<i class="fa fa-cog fa-3x"></i>
+				<h3>faq</h3>
+				<p>Những thắc mắc thường gặp.</p>
+			</div>
+		</section>
+	<section id="gallery">
+		<div class="col">
+			<div class="cap">
+				<h2>Packaging Design</h2>
+				<p>Your packaging is the material that contains your product. Packaging design is the process that allows your packaging to fulfil a wide range of functions.</p>
+				<button type="button"><a href="index.html">Know More</a></button>
+			</div>
+		</div>
+		<div class="col">
+			<div class="cap"></div>
+		</div>
+		<div class="col">
+			<div class="cap">
+				<h2>Web Design</h2>
+				<p>The different areas of web design include web graphic design; user interface design (UI design); authoring, including standardised code and proprietary software; user experience design (UX design); and search engine optimization.</p>
+				<button type="button"><a href="index.html">Know More</a></button>
+			</div>
+		</div>
+	</section>
+	<section id="pop">
+		<button class="ob" onclick="openForm()">Message</button>
+
+		<div class="popup" id="myForm">
+		  <form action="/action_page.php" class="form-container">
+			<h1>Chat</h1>
+			<div  class="me">
+			<label for="msg"><b>Message</b></label>
+			<textarea placeholder="Type message.." required></textarea>
+
+			<button type="submit" class="btn">Send</button>
+			<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+		  </form>
+		</div>
+
+		<script>
+		function openForm() {
+		  document.getElementById("myForm").style.display = "block";
+		}
+
+		function closeForm() {
+		  document.getElementById("myForm").style.display = "none";
+		}
+		</script>
+	</section>
+	</main>
+	<footer>
+		<div class="endcon">
+			<a href="https://www.facebook.com/peo.tequila"><i class="fa fa-facebook-square fa-lg"></i></a>
+			<a href="https://www.instagram.com/_pmtm_"><i class="fa fa-instagram fa-lg"></i></a>
+			<a href="https://twitter.com/PeoMy53"><i class="fa fa-twitter fa-lg"></i></a>
+			<a href="https://www.behance.net/mypham19"><i class="fa fa-behance fa-lg"></i></a>
+			<a href="https://www.reddit.com/user/MiePhamMy"><i class="fa fa-reddit fa-lg"></i></a>
+		</div>
+		<h2>Copyright &#169; 2022 MiePham</h2>
+	</footer>
+</body>
+</html>

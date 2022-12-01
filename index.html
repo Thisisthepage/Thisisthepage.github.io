@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<link type="text/css" rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+
+<body>
+	<header id="myBtn">
+		<img src="image/logo.png">
+		<ul>
+			<li><a href="#banner">Home</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#portfolio">Portfolio</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</header>
+	<main>
+		<section id="banner">
+			<div>
+				<h1 class="bung">I'm Mie Pham</h1>
+				<div>
+					<i class="fa fa-facebook-square fa-lg"></i>
+					<i class="fa fa-instagram fa-lg"></i>
+					<i class="fa fa-twitter fa-lg"></i>
+					<i class="fa fa-behance fa-lg"></i>
+					<i class="fa fa-reddit fa-lg"></i>
+				</div>
+
+					<i class="fa fa-chevron-down fa-1x nutchuyendong"></i>
+			</div>
+		</section>
+		<section id="about">
+			<div>
+				<h3>About Mie</h3>
+				<span id="typed3"></span>
+				<p>Người bạn thiết kế của bạn.<br><br>
+
+Nghe bảo, cô ấy rất thích việc lắng nghe và đưa ra những góp ý chính xác cho khách hàng. Cùng trải qua từng cái chốt nhỏ trong giai đoạn lên ý tưởng cũng sẽ rất thú vị, cùng nhau hoàn thành thôi nào.</p>
+			</div>
+			<img src="image/MieP.png">
+		</section>
+		<section id="portfolio">
+			<ul><h3>PORTFOLIO</h3>
+				<li><a href="#">All</a></li>
+				<li><a href="#">Web Design</a></li>
+				<li><a href="#">Illustrator</a></li>
+				<li><a href="#">Application</a></li>
+				<li><a href="#">Development</a></li>
+			</ul>
+			<div class="grid">
+				<a href="GalleryProduct.html"><img class="Pic" src="image/03.jpg"></a>
+				<a href="GalleryProduct.html"><img class="Pic" src="image/04.jpg"></a>
+				<a href="GalleryProduct.html"><img class="Pic" src="image/05.jpg"></a>
+				<a href="GalleryProduct.html"><img class="Pic" src="image/06.jpg"></a>
+			</div>
+		</section>
+		<section id="contact">
+			<h3>GET IN TOUCH</h3>
+			<p>Liên hệ Mie để được tư vấn trực tiếp nhé. Một buổi trà chiều có thể sẽ dễ dàng hơn nếu chúng ta bắt đầu công việc đấy.</p>
+			<div class="contacticon">
+				<div class="itemcontact">
+					<span class="fa-stack fa-3x">
+					  <i class="fa fa-phone fa-stack-2x"></i>
+					</span>
+					<p>0937 - 906 - 848</p>
+				</div>
+				<div class="itemcontact">
+					<span class="fa-stack fa-3x">
+					  <i class="fa fa-map-marker fa-stack-2x"></i>
+					</span>
+					<p>Ho Chi Minh City, Viet Nam</p>
+				</div>
+				<div class="itemcontact">
+					<span class="fa-stack fa-3x">
+					  <i class="fa fa-envelope fa-stack-2x"></i>
+					</span>
+					<p>akakolumina@gmail.com</p>
+				</div>
+			</div>
+			<div class="form">
+					<input type="text" placeholder="Name">
+					<input type="email" placeholder="Email">
+					<textarea placeholder="Message"></textarea>
+					<button class="nut" type="submit"><a href="#">Submit</a></button>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div class="endcon">
+			<a href="https://www.facebook.com/peo.tequila"><i class="fa fa-facebook-square fa-lg"></i></a>
+			<a href="https://www.instagram.com/_pmtm_"><i class="fa fa-instagram fa-lg"></i></a>
+			<a href="https://twitter.com/PeoMy53"><i class="fa fa-twitter fa-lg"></i></a>
+			<a href="https://www.behance.net/mypham19"><i class="fa fa-behance fa-lg"></i></a>
+			<a href="https://www.reddit.com/user/MiePhamMy"><i class="fa fa-reddit fa-lg"></i></a>
+		</div>
+		<h2>Copyright &#169; 2022 MiePham</h2>
+	</footer>
+	<script>
+		// Get the button
+		let mybutton = document.getElementById("myBtn");
+
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+		  if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+			mybutton.style.display = "flex";
+		  } else {
+			mybutton.style.display = "none";
+		  }
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		  document.body.scrollTop = 0;
+		  document.documentElement.scrollTop = 0;
+		}
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+	<script>
+		var typed3 = new Typed('#typed3', {
+    strings: ['Bạn cần gì đó', 'Có Mie đâyyy'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    smartBackspace: true, // this is a default
+    loop: true
+  });
+    
+	</script>
+</body>
+</html>
